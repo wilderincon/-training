@@ -28,41 +28,22 @@ and open the template in the editor.
             .title-head{
                 background: blue;
             }
+            span{
+                font-weight: 700;
+            }
+            div{
+                line-height: 2;
+            }
         </style>
 
     </head>
     <body>
-        <table>
-            <tr>
-                <th class='title-head'>Simbolo</th>
-                <th class='title-head'>Descipción</th>
-                <th class='title-head'>Resultado</th>
-            </tr>
-            <tr>
-                <th>+</th>
-                <th>El resultado de sumar 41 y 2.1 es:</th>
-                <th><?php echo $suma; ?></th>
-            </tr>
-            <tr>
-                <th> - </th>
-                <th>El resultado de restar 41 y 2.1 es:</th>
-                <th><?php echo $resta; ?></th>
-            </tr>
-            <tr>
-                <th> * </th>
-                <th>El resultado de Multiplicar 41 y 2.1 es:</th>
-                <th><?php echo $multi; ?></th>
-            </tr>
-            <tr>
-                <th> / </th>
-                <th>El resultado de Dividir 41 y 2.1 es:</th>
-                <th><?php echo $divi; ?></th>
-            </tr>
-            <tr>
-                <th> % </th>
-                <th>El resultado de Residuo de la divición entre 41 y 2.1 es:</th>
-                <th><?php echo $mod; ?></th>
-            </tr>
-        </table>
+        <section>
+            <div>El resultado de sumar 41 y 2.1 es: <span><?php echo $suma; ?></span></div>
+            <div>El resultado de restar 41 y 2.1 es: <span><?php echo $resta; ?></span></div>
+            <div>El resultado de Multiplicar 41 y 2.1 es: <span><?php echo $multi; ?></span></div>
+            <div>El resultado de la divición de 41 y 2.1 es: <span><?php echo $divi; ?></span></div>
+            <div>El resultado de Residuo de la divición entre 41 y 2.1 es: <span><?php echo $mod; ?></span></div>
+        </section>
     </body>
 </html>

@@ -6,17 +6,17 @@ $employees = [
     13 => [
         'firstname' => 'Mark',
         'lastname' => 'Gil',
-        'salary' => 3800
+        'salary' => 7800
     ],
     3 => [
         'firstname' => 'Frank',
         'lastname' => 'Williams',
-        'salary' => 2000
+        'salary' => 5000
     ],
     42 => [
         'firstname' => 'Saul',
         'lastname' => 'Goodman',
-        'salary' => 4800
+        'salary' => 2000
     ]
 ];
 
@@ -51,12 +51,15 @@ foreach ($employees as $key => $value) {
     }
     $mayor = $mayor;
 
-    echo "<li>" . $employees[$key]['firstname'] . " " . $employees[$key]['lastname'] . " (ID" . $key . ")" . " tiene un salario de " . $employees[$key]['salary'] . "€ " . $nuevosal . "</li>";
-}
-foreach ($employees as $key => $value) {
     if ($mayor == $employees[$key]['salary']) {
         $info = $employees[$key];
     }
+    echo "<li>" . $employees[$key]['firstname'] . " " . $employees[$key]['lastname'] . " (ID" . $key . ")" . " tiene un salario de " . $employees[$key]['salary'] . "€ " . $nuevosal . "</li>";
 }
+/* foreach ($employees as $key => $value) {
+  if ($mayor == $employees[$key]['salary']) {
+  $info = $employees[$key];
+  }
+  } */
 echo "</ul>";
-echo $info['firstname'] . "  " . $info['lastname'] . " tiene el mayor salario de todos.";
+echo $info['firstname'] . " " . $info['lastname'] . " tiene el mayor salario de todos.";

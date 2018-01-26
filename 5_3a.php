@@ -1,40 +1,40 @@
 <?php
-$pelicula = [
+$pelicula       = [
     [
-        "Identificador" => 1,
-        "Titulo" => "Thor: Ragnarok",
-        "Director" => "Ben Cooke, Taika Waititi, Tom Hooper",
-        "Ano" => 2017,
-        "Duracion" => "01:35:50"
+        'Identificador' => 1,
+        'Titulo' => 'Thor: Ragnarok',
+        'Director' => 'Ben Cooke, Taika Waititi, Tom Hooper',
+        'Ano' => 2017,
+        'Duracion' => '01:35:50'
     ],
     [
-        "Identificador" => 2,
-        "Titulo" => "Saw VIII",
-        "Director" => "Bianca Marini, Daniel Gold, Lawrence",
-        "Ano" => 2017,
-        "Duracion" => "01:35:50"
+        'Identificador' => 2,
+        'Titulo' => 'Saw VIII',
+        'Director' => 'Bianca Marini, Daniel Gold, Lawrence',
+        'Ano' => 2017,
+        'Duracion' => '01:35:50'
     ],
     [
-        "Identificador" => 3,
-        "Titulo" => "Capitán América 3: Civil War",
-        "Director" => "Anthony Russo, Joe Russo",
-        "Ano" => 2016,
-        "Duracion" => "01:35:50"
+        'Identificador' => 3,
+        'Titulo' => 'Capitán América 3: Civil War',
+        'Director' => 'Anthony Russo, Joe Russo',
+        'Ano' => 2016,
+        'Duracion' => '01:35:50'
     ],
     [
-        "Identificador" => 4,
-        "Titulo" => "Doctor Strange (Doctor Extraño)",
-        "Director" => "Daisy Baldry, Jo Beckett, Michael Lerma",
-        "Ano" => 2016,
-        "Duracion" => "115 min"
+        'Identificador' => 4,
+        'Titulo' => 'Doctor Strange (Doctor Extraño)',
+        'Director' => 'Daisy Baldry, Jo Beckett, Michael Lerma',
+        'Ano' => 2016,
+        'Duracion' => '115 min'
     ],
     [
-        "Identificador" => 5,
-        "Titulo" => "Muerte Subita",
-        "Director" => "Ara Paiaya",
-        "Ano" => 2017,
-        "Duracion" => "145 min"
-    ]
+        'Identificador' => 5,
+        'Titulo' => 'Muerte Subita',
+        'Director' => 'Ara Paiaya',
+        'Ano' => 2017,
+        'Duracion' => '145 min'
+    ],
 ];
 ?>
 
@@ -83,14 +83,14 @@ and open the template in the editor.
         <th>Duración</th>
     </tr>
     <?php
-    for ($i = 0; $i < count($pelicula); $i++) {
-
+    $pelisCount = count($pelicula);
+    for ($i = 0; $i < $pelisCount; $i++) {
         echo '<tr>
-                <th>' . $pelicula[$i]["Identificador"] . '</th>
-                <th>' . $pelicula[$i]["Titulo"] . '</th>
-                <th>' . $pelicula[$i]["Director"] . '</th>
-                <th>' . $pelicula[$i]["Ano"] . '</th>
-                <th>' . $pelicula[$i]["Duracion"] . '</th>
+                <th>'.$pelicula[$i]['Identificador'].'</th>
+                <th>'.$pelicula[$i]['Titulo'].'</th>
+                <th>'.$pelicula[$i]['Director'].'</th>
+                <th>'.$pelicula[$i]['Ano'].'</th>
+                <th>'.$pelicula[$i]['Duracion'].'</th>
             </tr>
             ';
     }

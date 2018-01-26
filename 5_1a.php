@@ -2,11 +2,11 @@
 $num1 = 41;
 $num2 = 2.1;
 
-$suma = $num1 + $num2;
-$resta = $num1 - $num2;
-$multi = $num1 * $num2;
-$divi = $num1 / $num2;
-$mod = $num1 % $num2;
+$suma  = ($num1 + $num2);
+$resta = ($num1 - $num2);
+$multi = ($num1 * $num2);
+$divi  = ($num1 / $num2);
+$mod   = ($num1 % $num2);
 ?>
 
 <!DOCTYPE html>
